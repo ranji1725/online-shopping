@@ -1,0 +1,159 @@
+h1 {
+  text-align: center;
+  font-style: normal;
+  font-family: serif;
+  color: black;
+  float: left;
+}
+
+span {
+  font-size: 130%;
+  color: red;
+  font-style: italic;
+}
+
+h1::first-letter {
+  font-style: italic;
+  font-size: 140%;
+  color: orangered;
+}
+
+.logo {
+  float: left;
+}
+
+.ex {
+  list-style-type: none;
+  font-size: 28px;
+  padding: 0%;
+  overflow: hidden;
+  background-color: deeppink;
+  top: 0;
+  width: 100%
+}
+
+.abc {
+  float: left;
+}
+
+.abc a {
+  display: block;
+  padding: 8px 20px;
+  color: yellow;
+  text-decoration: none;
+}
+
+.abc a:hover {
+  background-color: black;
+  color: white;
+}
+
+.shop {
+  border: 2px solid black;
+  display:flex;
+  flex-wrap: wrap;
+
+}
+
+.pic1 {
+  padding: 4%;
+
+
+  margin: 10px;
+  border: 2px inset;
+  text-align: center;
+}
+
+.pic2 {
+  padding: 4%;
+
+  margin: 10px;
+  text-align: center;
+  border: 2px outset;
+}
+
+.pic3 {
+  padding: 4%;
+  margin: 10px;
+  border: 2px outset;
+  text-align: center;
+}
+
+.pic4 {
+  padding: 4%;
+  margin: 10px;
+  border: 2px outset;
+  text-align: center;
+}
+
+.pic5 {
+  padding: 4%;
+  margin: 10px;
+  border: 2px inset;
+  text-align: center;
+}
+
+.pic6 {
+  padding: 4%;
+  margin: 10px;
+  border: 2px outset;
+  text-align: center;
+}
+
+.b {
+  background-color: pink;
+  color: black;
+}
+
+.foot {
+  text-align: right;
+  font-size: 20px;
+  background-color: deepskyblue;
+}
+
+/*media queries*/
+@media only screen and (max-width:425px) {
+  .shop {
+    display: flex;
+    border: 2px solid #ddd;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  @media screen and (min-width:426px) and (max-width:768px) {
+    .shop {
+      border: 2px solid #ddd;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .p {
+      font-style: italic;
+      font-size: 100%;
+    }
+
+    .b {
+      font-size: 130%;
+    }
+  }
+
+  @media screen and (min-width:769px) and (max-width:1440px) {
+    .shop {
+      display: flex;
+      border: 2px solid #ddd;
+      flex-wrap: wrap;
+
+      justify-content:  space-between;
+      flex-direction: row-reverse;
+    }
+
+    .para {
+      font-size: 180%;
+      font-style: italic;
+    }
+
+    .b {
+      font-size: 150%;
+    }
+  }
